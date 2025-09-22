@@ -44,6 +44,7 @@ h1 {
 }
 
 h2 {
+    padding-bottom: 0.8rem;
     font-size: clamp(24px, 1.458vw, 28px);
     color: var(--brown-800);
 }
@@ -72,7 +73,7 @@ hr {
 }
 
 .recipe__section {
-    margin: 2rem 0 2rem 0;
+    margin: 1.8rem 0 1.8rem 0;
 }
 
 .recipe__section:last-child {
@@ -81,9 +82,9 @@ hr {
 
 /* header image */
 .recipe__header-img {
-    display: block;
     max-width: 100%;
     border-radius: 10px;
+    display: block;
 }
 
 /* preparation time box */
@@ -104,7 +105,11 @@ hr {
 
 /* lists */
 ol, ul {
-    list-style-position: inside;
+    padding-left: 1.5rem;
+}
+
+li {
+    padding: 0.5rem 0 0 1rem;
 }
 
 .recipe__term {
