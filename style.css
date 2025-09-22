@@ -51,7 +51,10 @@ p, ul, ol, table {
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     color: var(--stone-600);
-    list-style-position: inside;
+}
+
+hr {
+    border-top: 1px solid var(--stone-150);
 }
 
 /* article and header */
@@ -82,16 +85,43 @@ p, ul, ol, table {
     color: var(--rose-800);
 }
 
-.recipe__prep-ul {
-
+/* lists */
+ol, ul {
+    list-style-position: inside;
 }
 
-/* lists */
-.recipe__ul-term {
+.recipe__term {
     font-weight: 600;
 }
 
+.recipe__prep-list li::marker {
+    color: var(--rose-800);
+}
 
+ul li::marker,
+ol li::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+/* nutrition table */
+.recipe__nutri-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recipe__nutri-table tr {
+    border-bottom: 1px solid var(--stone-150)
+}
+
+.recipe__nutri-table tr:last-child {
+    border-bottom: none;
+}
+
+.recipe__nutri-table td:nth-child(even) {
+    font-weight: 600;
+    color: var(--brown-800);
+}
 
 /* media queries */
 @media (max-width: 768px) {
